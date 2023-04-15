@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Test Trinity</string>
+    <string name="name">Name</string>
+    <string name="header_main">Main Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="sub_header">Sub Information</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
 </resources>
