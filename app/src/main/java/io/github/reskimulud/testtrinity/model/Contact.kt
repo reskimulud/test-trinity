@@ -1,4 +1,4 @@
-package io.github.reskimulud.testtrinity
+package io.github.reskimulud.testtrinity.model
 
 data class Contact(
     val id: String,

@@ -3,7 +3,7 @@ package io.github.reskimulud.testtrinity.ui.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import io.github.reskimulud.testtrinity.Contact
+import io.github.reskimulud.testtrinity.model.Contact
 import io.github.reskimulud.testtrinity.databinding.ContactItemBinding
 
 class GridContactAdapter(

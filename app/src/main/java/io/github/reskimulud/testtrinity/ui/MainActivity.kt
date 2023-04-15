@@ -6,8 +6,9 @@ import android.os.Bundle
 import android.view.Menu
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import io.github.reskimulud.testtrinity.Contact
+import io.github.reskimulud.testtrinity.model.Contact
 import io.github.reskimulud.testtrinity.R
+import io.github.reskimulud.testtrinity.data.ContactsData
 import io.github.reskimulud.testtrinity.databinding.ActivityMainBinding
 import io.github.reskimulud.testtrinity.ui.adapter.GridContactAdapter
 
@@ -43,24 +44,6 @@ class MainActivity : AppCompatActivity() {
         rvContacts.layoutManager = GridLayoutManager(this, 2)
         rvContacts.adapter = adapter
 
-        adapter.setData(dummyData())
+        adapter.setData(ContactsData.getData(this))
     }
-
-    private fun dummyData(): ArrayList<Contact> = arrayListOf(
-        Contact(
-            "user-1",
-            "Reski Mulud",
-            "Muchamad"
-        ),
-        Contact(
-            "user-2",
-            "Reski Mulud",
-            "Muchamad"
-        ),
-        Contact(
-            "user-3",
-            "Reski Mulud",
-            "Muchamad"
-        )
-    )
 }
