@@ -42,7 +42,7 @@ object ContactsData {
                         Contact(
                             item.getString("id"),
                             item.getString("firstName"),
-                            item.getString("lastName")
+                            item.getString("lastName"),
                         )
                     )
                 }
