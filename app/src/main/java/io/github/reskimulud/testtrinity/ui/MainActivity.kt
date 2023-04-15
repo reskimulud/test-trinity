@@ -3,9 +3,11 @@ package io.github.reskimulud.testtrinity.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.github.reskimulud.testtrinity.Contact
+import io.github.reskimulud.testtrinity.R
 import io.github.reskimulud.testtrinity.databinding.ActivityMainBinding
 import io.github.reskimulud.testtrinity.ui.adapter.GridContactAdapter
 
@@ -29,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         showRecyclerList()
+        supportActionBar?.title = "Contact"
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
     }
 
     private fun showRecyclerList() {
