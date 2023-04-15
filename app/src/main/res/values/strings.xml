@@ -7,4 +7,5 @@
     <string name="sub_header">Sub Information</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
+    <string name="dob">DOB</string>
 </resources>
